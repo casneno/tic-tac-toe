@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /*100% of the viewport*/
+    margin: 0;
+    /*because browsers have a margin by default. we want to set it to zero*/
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    /*by default it lays all elements horizontally on the page*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+header {
+    font-size: 10vmin;
+    color: darkslategray
+}
+
+h1 {
+    font-size: 5vmin;
+    font-family: 'Rowdies', cursive;
+    color: darkslategray
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 15vmin);
+    grid-template-rows: repeat(3, 15vmin);
+    gap: 1vmin;
+    margin-top: 4vmin;
+    background-color: darkslategrey;
+}
+
+button {
+    margin-top: 8vmin;
+    font-family: 'Rowdies', cursive;
+    color: gray;
+    border-radius: 4vmin;
+    border: 0.1vmin solid gray;
+    padding: 1.5vmin;
+}
+
+.box {
+    display: flex;
+    font-size: 12vmin;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    color: slategrey;
+    font-family: 'Permanent Marker', cursive;
+}
